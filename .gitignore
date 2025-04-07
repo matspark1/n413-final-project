@@ -1,0 +1,8 @@
+/**.**
+!.gitignore
+!readme.**
+/wp-admin
+/wp-includes
+/wp-content/themes/twenty**
+/wp-content/up**
+readme.html
