@@ -27,4 +27,6 @@ Describe style variant differences
 
 ## Members & Responsibilities
 
-Who did what?
+- Salmane Issa
+- Matt
+- Johnathan
