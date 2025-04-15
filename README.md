@@ -27,6 +27,7 @@ Describe tools and techniques learned through this course that aided in the comp
 
 ## Members & Responsibilities
 
-- Salmane Issa
-- Matt
-- Johnathan
+### Salmane Issa
+  - 404.html(template)
+###Matt
+###Johnathan
