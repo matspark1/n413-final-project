@@ -33,7 +33,20 @@
           "typography": {
             "fontFamily": "'Merriweather', Georgia, serif"
           }
+        },
+       "core/navigation": {
+        "color": {
+          "background": "var:preset|color|primary"
+        },
+        "spacing": {
+          "padding": {
+            "left": "24px",
+            "right": "24px",
+            "top": "12px",
+            "bottom": "12px"
+          }
         }
+      }
       }
     }
   }
