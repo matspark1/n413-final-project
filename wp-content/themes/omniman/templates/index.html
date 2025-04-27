@@ -1,7 +1,39 @@
 <!-- wp:template-part {"slug":"nav"} /-->
 
-<!-- wp:heading {"level":1} -->
-<h1 class="wp-block-heading">
-We needed a home to start 
-</h1>
-<!-- /wp:heading -->
+<!-- wp:group {"tagName":"section","className":"index-hero-section","layout":{"type":"constrained"}} -->
+<section class="wp-block-group index-hero-section">
+  <!-- wp:heading {"level":1,"className":"index-hero-heading"} -->
+  <h1 class="wp-block-heading index-hero-heading">Space Center</h1>
+  <!-- /wp:heading -->
+
+  <!-- wp:image {"className":"index-hero-banner"} -->
+  <figure class="wp-block-image index-hero-banner">
+    <img src="https://picsum.photos/3000/500" alt="Space Center Hero" />
+  </figure>
+  <!-- /wp:image -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:query {"queryId":1,"query":{"perPage":6,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date"},"displayLayout":{"type":"grid","columns":2}} -->
+<div class="wp-block-query">
+  <!-- wp:post-template -->
+  <div class="wp-block-post-template">
+    <!-- wp:group {"className":"index-post-card","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group index-post-card">
+      <!-- wp:post-featured-image {"className":"index-post-thumb"} /-->
+
+      <!-- wp:group {"className":"index-post-info"} -->
+      <div class="wp-block-group index-post-info">
+        <!-- wp:heading {"level":4} -->
+        <h4 class="wp-block-heading">Space Post</h4>
+        <!-- /wp:heading -->
+        <!-- wp:post-title /-->
+        <!-- wp:post-date /-->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:post-template -->
+</div>
+<!-- /wp:query -->
