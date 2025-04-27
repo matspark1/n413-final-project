@@ -4,7 +4,10 @@
 <section class="hero">
   <div class="hero-content">
     <h1>Omniman</h1>
-    <p>Discover the mysteries of the Moon, Mars, and the International Space Station. Journey through space with us!</p>
+    <p>
+      Discover the mysteries of the Moon, Mars, and the International Space
+      Station. Journey through space with us!
+    </p>
     <a href="#explore" class="wp-block-button__link">Start Exploring</a>
   </div>
 </section>
@@ -12,15 +15,24 @@
 <section id="explore" class="featured-topics">
   <div class="topic">
     <h2><a href="/moon">The Moon</a></h2>
-    <p>Learn about lunar missions, surface features, and the science behind Earth's closest neighbor.</p>
+    <p>
+      Learn about lunar missions, surface features, and the science behind
+      Earth's closest neighbor.
+    </p>
   </div>
   <div class="topic">
     <h2><a href="/mars">Mars</a></h2>
-    <p>Explore the Red Planet's terrain, missions, and the ongoing search for life beyond Earth.</p>
+    <p>
+      Explore the Red Planet's terrain, missions, and the ongoing search for
+      life beyond Earth.
+    </p>
   </div>
   <div class="topic">
     <h2><a href="/spacestation">International Space Station</a></h2>
-    <p>See how countries collaborate aboard the ISS and what life is like in orbit.</p>
+    <p>
+      See how countries collaborate aboard the ISS and what life is like in
+      orbit.
+    </p>
   </div>
 </section>
 
@@ -28,12 +40,17 @@
   <h2>Latest Space Updates</h2>
 
   <!-- wp:query {"query":{"perPage":3,"postType":"post"}} -->
-    <div class="wp-block-query">
-      <!-- wp:post-template -->
-        <!-- wp:post-title {"isLink":true} /-->
-        <!-- wp:post-excerpt /-->
-      <!-- /wp:post-template -->
+  <div class="wp-block-query iss-post-grid">
+    <!-- wp:post-template -->
+    <div class="wp-block-group iss-post-card">
+      <!-- wp:group {"className":"iss-post-info"} -->
+      <div class="wp-block-group iss-post-info">
+        <!-- wp:post-title {"level":2,"isLink":true,"className":"iss-post-title"} /-->
+        <!-- wp:post-excerpt {"className":"iss-post-excerpt"} /-->
+      </div>
+      <!-- /wp:group -->
     </div>
+    <!-- /wp:post-template -->
+  </div>
   <!-- /wp:query -->
-
 </section>

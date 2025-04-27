@@ -107,7 +107,7 @@ body {
 
 .topic:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(126, 54, 215, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .topic h2 a {
@@ -200,10 +200,6 @@ body {
 .single-post a {
   color: var(--wp--preset--color--accent);
   text-decoration: underline;
-}
-
-.single-post a:hover {
-  color: #a762e3;
 }
 
 .index-hero-section {
