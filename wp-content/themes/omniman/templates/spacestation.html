@@ -1,0 +1,55 @@
+<!-- wp:template-part {"slug":"nav"} /-->
+
+<!-- wp:group {"tagName":"section","className":"iss-hero-section","layout":{"type":"constrained"}} -->
+<section class="wp-block-group iss-hero-section">
+  <!-- wp:heading {"level":1,"className":"iss-hero-heading"} -->
+  <h1 class="wp-block-heading iss-hero-heading">International Space Station</h1>
+  <!-- /wp:heading -->
+
+  <!-- wp:paragraph {"className":"iss-hero-paragraph"} -->
+  <p class="wp-block-paragraph iss-hero-paragraph">
+    The International Space Station (ISS) is a landmark of human collaboration
+    and innovation. Orbiting Earth every 90 minutes, the ISS serves as a hub for
+    scientific research, technology development, and international partnership.
+    Explore articles about how it was built, how astronauts live and work
+    aboard, and how countries around the world contribute to its missions.
+  </p>
+  <!-- /wp:paragraph -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:query {"query": {"postType": "post", "orderBy": "date", "order": "desc", "perPage": 2, "taxQuery": {"category": [0]}}, "displayLayout":{"type":"grid","columns":2}} -->
+<div class="wp-block-query iss-post-grid">
+  <!-- wp:post-template -->
+  <div class="wp-block-group iss-post-card">
+    <!-- wp:post-featured-image {"className":"iss-post-thumb"} /-->
+
+    <!-- wp:group {"className":"iss-post-info"} -->
+    <div class="wp-block-group iss-post-info">
+      <!-- wp:post-title {"level":2,"isLink":true,"className":"iss-post-title"} /-->
+      <!-- wp:post-excerpt {"className":"iss-post-excerpt"} /-->
+
+      <!-- wp:group {"className":"iss-post-meta","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+      <div class="wp-block-group iss-post-meta">
+        <!-- wp:post-author-name /-->
+        <!-- wp:post-date /-->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:post-template -->
+
+  <!-- wp:query-pagination {"className":"iss-pagination"} -->
+  <!-- wp:query-pagination-previous {"className":"iss-pagination-prev"} /-->
+  <!-- wp:query-pagination-numbers /-->
+  <!-- wp:query-pagination-next {"className":"iss-pagination-next"} /-->
+  <!-- /wp:query-pagination -->
+
+  <!-- wp:query-no-results -->
+  <!-- wp:paragraph -->
+  <p>Sorry, having issues retrieving the posts. Try again later.</p>
+  <!-- /wp:paragraph -->
+  <!-- /wp:query-no-results -->
+</div>
+<!-- /wp:query -->

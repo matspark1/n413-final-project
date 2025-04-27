@@ -1,10 +1,22 @@
-<!-- wp:navigation {"layout":{"type":"flex", "flexWrap":"nowrap", "justifyContent": "space-between"}, "className": "custom-navigation"} -->
-<!-- wp:group {"layout":{"type":"flex", "flexWrap":"nowrap"}} -->
-<div class="wp-block-group">
-  <!-- wp:navigation-link {"label":"SPACE CENTER","url":"/", "className": "web-name"} /-->
-  <!-- wp:navigation-link {"label":"Home","url":"/"} /-->
-  <!-- wp:navigation-link {"label":"Contact","url":"/contact"} /-->
+<!-- wp:navigation {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}, "className":"nav-wrapper"} -->
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"},"className":"nav-inner"} -->
+<div class="wp-block-group nav-inner">
+  <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"},"className":"nav-left"} -->
+  <div class="wp-block-group nav-left">
+    <!-- wp:navigation-link {"label":"SPACE CENTER","url":"/"} /-->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"flex-end"},"className":"nav-right"} -->
+  <div class="wp-block-group nav-right">
+    <!-- wp:navigation-link {"label":"Home","url":"/"} /-->
+    <!-- wp:navigation-link {"label":"ISS","url":"/spacestation"} /-->
+    <!-- wp:navigation-link {"label":"Mars","url":"/mars"} /-->
+    <!-- wp:navigation-link {"label":"Moon","url":"/moon"} /-->
+    <!-- wp:navigation-link {"label":"Newsletter","url":"/newsletter"} /-->
+    <!-- wp:navigation-link {"label":"Contact","url":"/contact"} /-->
+  </div>
+  <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
-
 <!-- /wp:navigation -->

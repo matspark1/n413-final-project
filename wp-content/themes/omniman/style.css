@@ -23,6 +23,44 @@ body {
   padding: 0;
 }
 
+.nav-wrapper {
+  background-color: var(--wp--preset--color--primary);
+  padding: 16px 32px;
+}
+
+.nav-inner {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-left a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--wp--preset--color--accent) !important;
+  text-decoration: none;
+}
+
+.nav-right a {
+  font-size: 1rem;
+  color: var(--wp--preset--color--text);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
 .hero {
   padding: 120px 20px;
   text-align: center;
@@ -210,4 +248,92 @@ body {
   flex-direction: column;
   gap: 0.5rem;
   width: 100%;
+}
+
+.iss-hero-section {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.iss-hero-heading {
+  font-size: 3.5rem;
+  color: var(--wp--preset--color--accent);
+  margin-bottom: 20px;
+}
+
+.iss-hero-paragraph {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  color: var(--wp--preset--color--text);
+}
+
+.iss-post-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 60px 20px;
+  background-color: var(--wp--preset--color--background);
+}
+
+.iss-post-card {
+  background-color: var(--wp--preset--color--primary);
+  border: 1px solid var(--wp--preset--color--primary);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease;
+}
+
+.iss-post-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.iss-post-thumb img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.iss-post-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.iss-post-title {
+  color: var(--wp--preset--color--accent);
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.iss-post-excerpt {
+  font-size: 1rem;
+  color: var(--wp--preset--color--text);
+}
+
+.iss-post-meta {
+  font-size: 0.9rem;
+  color: var(--wp--preset--color--text);
+  gap: 10px;
+}
+
+.iss-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 1rem;
+}
+
+.iss-pagination-prev,
+.iss-pagination-next {
+  background-color: var(--wp--preset--color--accent);
+  color: black;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
 }
