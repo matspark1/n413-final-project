@@ -72,7 +72,7 @@ Through this project, we built a custom WordPress block theme by setting up temp
 - 3 posts (International Space Station)
 - newsletter signup
 
-### Johnathan Baker
+### Jonathan Baker
 
 - front-page.html
 - single.html
