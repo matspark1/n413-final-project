@@ -24,7 +24,7 @@
         "button": {
           "color": {
             "background": "var:preset|color|accent",
-            "text": "black"
+            "text": "var:preset|color|text"
           }
         }
       },

@@ -42,7 +42,7 @@ body {
 
 .wp-block-button__link {
   background-color: var(--wp--preset--color--accent);
-  color: #000;
+  color: var(--wp--preset--color--text);
   padding: 12px 30px;
   text-decoration: none;
   font-size: 1.2rem;
