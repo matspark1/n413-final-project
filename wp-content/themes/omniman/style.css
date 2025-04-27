@@ -4,10 +4,9 @@ Author: Matthew Sparkman, Jonathan Baker, Salmane Issa
 Description: Space Theme
 Version: 1
 */
-.custom-navigation {
-  height: 60px;
-  display: flex;
-  align-items: center;
+
+.wp-block-navigation__responsive-container a {
+  text-decoration: none !important;
 }
 
 .web-name {
@@ -157,11 +156,13 @@ body {
 
 /* Single Post Styles */
 .single-post {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 20px;
-  background-color: var(--wp--preset--color--primary);
+  background-color: var(--wp--preset--color--background);
   border-radius: 12px;
+  .wp-block-post-title,
+  .post-meta,
+  .wp-block-post-content {
+    padding: 0 40px;
+  }
 }
 
 .single-post img {
@@ -181,6 +182,9 @@ body {
   font-size: 1rem;
   color: #bbbbbb;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
 .post-meta span {
@@ -269,11 +273,21 @@ body {
 }
 
 .iss-post-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--wp--preset--color--background);
+  width: 100%;
+}
+
+.wp-block-query .wp-block-post {
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.wp-block-post-template {
+  width: 70vw;
 }
 
 .iss-post-card {
@@ -285,6 +299,7 @@ body {
   display: flex;
   flex-direction: column;
   transition: box-shadow 0.3s ease;
+  width: 100%;
 }
 
 .iss-post-card:hover {
