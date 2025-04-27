@@ -4,3 +4,14 @@ Author: Matthew Sparkman, Jonathon Baker, Salmane Issa
 Description: Space Theme
 Version: 1
 */
+.custom-navigation {
+    height: 60px;   
+    display: flex;
+    align-items: center;
+}
+
+.web-name {
+    font-weight: bold;
+    font-size: 30px;
+    color: #2C2C2C;
+}
