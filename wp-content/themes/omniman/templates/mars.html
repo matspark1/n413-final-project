@@ -1,0 +1,52 @@
+<!-- wp:template-part {"slug":"nav"} /-->
+
+<!-- wp:group {"tagName":"section","className":"mars-hero-section","layout":{"type":"constrained"}} -->
+<section class="wp-block-group mars-hero-section">
+  <!-- wp:heading {"level":1,"className":"mars-hero-heading"} -->
+  <h1 class="wp-block-heading mars-hero-heading">Mars Exploration</h1>
+  <!-- /wp:heading -->
+
+  <!-- wp:paragraph {"className":"mars-hero-paragraph"} -->
+  <p class="wp-block-paragraph mars-hero-paragraph">
+    Mars, often called the Red Planet, has captivated scientists and explorers for centuries. 
+    Explore its terrain, past missions, and the future of human travel to Mars.
+  </p>
+  <!-- /wp:paragraph -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:query {"query": {"postType": "post", "orderBy": "date", "order": "desc", "perPage": 3, "taxQuery": {"category": [5]}}, "displayLayout":{"type":"grid","columns":1}} -->
+<div class="wp-block-query mars-post-grid">
+  <!-- wp:post-template -->
+  <div class="wp-block-group mars-post-card">
+    <!-- wp:post-featured-image {"className":"mars-post-thumb"} /-->
+
+    <!-- wp:group {"className":"mars-post-info"} -->
+    <div class="wp-block-group mars-post-info">
+      <!-- wp:post-title {"level":2,"isLink":true,"className":"mars-post-title"} /-->
+      <!-- wp:post-excerpt {"className":"mars-post-excerpt"} /-->
+
+      <!-- wp:group {"className":"mars-post-meta","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+      <div class="wp-block-group mars-post-meta">
+        <!-- wp:post-author-name /-->
+        <!-- wp:post-date /-->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:post-template -->
+
+  <!-- wp:query-pagination {"className":"mars-pagination"} -->
+  <!-- wp:query-pagination-previous {"className":"mars-pagination-prev"} /-->
+  <!-- wp:query-pagination-numbers /-->
+  <!-- wp:query-pagination-next {"className":"mars-pagination-next"} /-->
+  <!-- /wp:query-pagination -->
+
+  <!-- wp:query-no-results -->
+  <!-- wp:paragraph -->
+  <p>Sorry, no Mars articles available right now. Please check back soon!</p>
+  <!-- /wp:paragraph -->
+  <!-- /wp:query-no-results -->
+</div>
+<!-- /wp:query -->
