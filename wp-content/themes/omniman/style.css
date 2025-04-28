@@ -367,12 +367,12 @@ body {
   
   .mars-hero-heading {
     font-size: 3.5rem;
-    color: #7e36d7;
+    color: var(--wp--preset--color--accent);
   }
   
   .mars-hero-paragraph {
     font-size: 1.4rem;
-    color: #dbdbdb;
+    color: var(--wp--preset--color--text);
     max-width: 700px;
     margin: 20px auto 0;
   }
@@ -443,6 +443,3 @@ body {
     text-decoration: none;
     font-size: 1rem;
   }
-
-  
-  
