@@ -18,3 +18,27 @@
   <!-- /wp:paragraph -->
 </section>
 <!-- /wp:group -->
+
+<!-- wp:query {"query": {"postType": "post", "orderBy": "date", "order": "desc", "perPage": 3, "taxQuery": {"category": [5]}}, "displayLayout":{"type":"grid","columns":1}} -->
+<div class="wp-block-query iss-post-grid">
+  <!-- wp:post-template -->
+  <div class="wp-block-group iss-post-card">
+    <!-- wp:post-featured-image {"className":"iss-post-thumb"} /-->
+
+    <!-- wp:group {"className":"iss-post-info"} -->
+    <div class="wp-block-group iss-post-info">
+      <!-- wp:post-title {"level":2,"isLink":true,"className":"iss-post-title"} /-->
+      <!-- wp:post-excerpt {"className":"iss-post-excerpt"} /-->
+
+      <!-- wp:group {"className":"iss-post-meta","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+      <div class="wp-block-group iss-post-meta">
+        <!-- wp:post-author-name /-->
+        <!-- wp:post-date /-->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:post-template -->
+</div>
+<!-- /wp:query -->
